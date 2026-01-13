@@ -1,0 +1,6 @@
+.venv
+backend/**/__pycache__/
+.env
+ml/bbc
+ml/nltk_data
+ml/bbc-fulltext.zip
