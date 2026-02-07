@@ -21,12 +21,9 @@ export default function CaseListItem({ item }: CaseListItemProps) {
           </div>
           <div className="mt-1 text-sm text-gray-400">
             category:{" "}
-            <span className="text-gray-200">
-              {item.predicted_category}
-            </span>
+            <span className="text-gray-200">{item.predicted_category}</span>
             {" • "}
-            status:{" "}
-            <span className="text-gray-200">{item.status}</span>
+            status: <span className="text-gray-200">{item.status}</span>
           </div>
         </div>
 

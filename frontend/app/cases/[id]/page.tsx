@@ -23,9 +23,7 @@ export default function CaseDetailPage() {
 
   if (loading || !data) {
     return (
-      <main className="max-w-3xl mx-auto p-6 text-gray-100">
-        Loading...
-      </main>
+      <main className="max-w-3xl mx-auto p-6 text-gray-100">Loading...</main>
     );
   }
 
@@ -40,9 +38,7 @@ export default function CaseDetailPage() {
 
       {/* Case Info */}
       <div className="border border-gray-700 rounded p-4 space-y-2 bg-gray-900">
-        <div className="text-xl font-semibold text-gray-100">
-          {data.title}
-        </div>
+        <div className="text-xl font-semibold text-gray-100">{data.title}</div>
         <div className="text-sm text-gray-400">
           category: {data.predicted_category} • status: {data.status}
         </div>

@@ -25,7 +25,8 @@ export default function CasesListPage() {
           <div className="border border-gray-800 bg-gray-900 rounded p-6 space-y-2">
             <p className="font-semibold">No cases yet</p>
             <p className="text-sm text-gray-400">
-              Go to <span className="text-blue-400">New Case</span> to create your first one.
+              Go to <span className="text-blue-400">New Case</span> to create
+              your first one.
             </p>
           </div>
         ) : (

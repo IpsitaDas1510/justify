@@ -33,8 +33,7 @@ export default function NewCasePage() {
       setSavedId(data.id);
       toast.success("Saved to DB");
     } catch (error) {
-      const message =
-        error instanceof Error ? error.message : "Save failed";
+      const message = error instanceof Error ? error.message : "Save failed";
       toast.error(message);
     }
   }

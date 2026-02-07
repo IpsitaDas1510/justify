@@ -64,9 +64,6 @@
 //   );
 // }
 
-
-
-
 // Major concept to learn here: static routes, simple layout composition, and shared page shell.
 export default function HomePage() {
   return (

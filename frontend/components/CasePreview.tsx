@@ -27,16 +27,12 @@ export default function CasePreview({
     <section className="border border-gray-800 bg-gray-900 rounded p-4 space-y-3">
       <div>
         <p className="text-sm text-gray-400">Suggested A Lawyer</p>
-        <p className="text-xl font-semibold text-gray-100">
-          {displayCategory}
-        </p>
+        <p className="text-xl font-semibold text-gray-100">{displayCategory}</p>
       </div>
 
       {scores && (
         <div className="pt-2">
-          <p className="text-sm font-medium mb-2 text-gray-300">
-            Confidence
-          </p>
+          <p className="text-sm font-medium mb-2 text-gray-300">Confidence</p>
           <ul className="text-sm space-y-1">
             {/* Sort by highest confidence first */}
             {Object.entries(scores)

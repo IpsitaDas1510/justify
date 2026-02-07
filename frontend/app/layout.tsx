@@ -33,9 +33,6 @@
 //   );
 // }
 
-
-
-
 import "./globals.css";
 import { Toaster } from "react-hot-toast";
 import { withBasePath } from "@/lib/routes";
@@ -90,14 +87,13 @@ export default function RootLayout({
         </header>
 
         {/* Main content */}
-        <main className="flex-1">
-          {children}
-        </main>
+        <main className="flex-1">{children}</main>
 
         {/* Footer */}
         <footer className="border-t border-gray-800">
           <div className="max-w-4xl mx-auto px-6 py-4 text-sm text-gray-500 text-center">
-            © {new Date().getFullYear()} JustiFy — Legal Triage Assistant | Built With ❤️ By Asutosh Panda
+            © {new Date().getFullYear()} JustiFy — Legal Triage Assistant |
+            Built With ❤️ By Asutosh Panda
           </div>
         </footer>
       </body>

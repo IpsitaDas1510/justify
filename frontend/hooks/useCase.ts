@@ -50,8 +50,7 @@ export function useCase(id: string | undefined) {
       setData(body);
       setMsg("Updated");
     } catch (error) {
-      const message =
-        error instanceof Error ? error.message : "Update failed";
+      const message = error instanceof Error ? error.message : "Update failed";
       setMsg(message);
     }
   };
@@ -65,8 +64,7 @@ export function useCase(id: string | undefined) {
       await deleteCase(id);
       window.location.href = withBasePath("/cases");
     } catch (error) {
-      const message =
-        error instanceof Error ? error.message : "Delete failed";
+      const message = error instanceof Error ? error.message : "Delete failed";
       setMsg(message);
     }
   };

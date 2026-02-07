@@ -27,7 +27,7 @@ export default function CaseForm({
       <div className="space-y-1">
         <label className="text-sm font-medium text-gray-300">Title</label>
         <input
-        suppressHydrationWarning 
+          suppressHydrationWarning
           className="w-full border border-gray-700 rounded p-2 bg-gray-800 text-gray-100 placeholder-gray-400"
           value={title}
           // Bubble the new value up to the parent state.
